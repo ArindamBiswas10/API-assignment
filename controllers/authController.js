@@ -228,7 +228,7 @@ const resetPassword = async(req,res,next)=>{
     const validatedData = resetPasswordSchema.parse(req.body);
     const { token, newPassword } = validatedData;
 
-    // Find user with valid reset token
+    
     const user = await User.findOne({
       resetToken: token,
       resetTokenExpiry: { $gt: new Date() }
