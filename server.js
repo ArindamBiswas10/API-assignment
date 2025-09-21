@@ -9,12 +9,7 @@ app.use(errorHandler);
 require('dotenv').config();
 
 app.use(express.json());
-/*const cors = require('cors');
 
-app.use(cors({
-  origin: 'http://localhost:3001', 
-  credentials: true,               
-}));*/
 
 app.use("/api/auth",authRoutes);
 
