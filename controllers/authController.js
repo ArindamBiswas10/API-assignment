@@ -161,7 +161,7 @@ const forgetPassword = async(req,res,next)=>{
     const validatedData = forgotPasswordSchema.parse(req.body);
     const { email } = validatedData;
 
-    // Find user by email
+    
     const user = await User.findOne({ email: email.toLowerCase() });
     
     if (!user) {
