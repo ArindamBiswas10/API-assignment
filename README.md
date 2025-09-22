@@ -21,7 +21,7 @@ Input validation and error handling
 ## Installation
 Clone the repository:
 
-git clone https://github.com/yourusername/auth-api.git
+git clone https://github.com/ArindamBiswas10/auth-api.git
 cd auth-api
 
 
@@ -30,17 +30,9 @@ Install dependencies:
 npm install
 
 
-Create a .env file (example):
-
-PORT=3000
-DB_URL=your_database_url
-JWT_SECRET=your_jwt_secret
-
-
 Start the server:
 
-node server.js
-# or if you have nodemon
+node server.js or
 nodemon server.js
 
 ## Example Requests
@@ -70,6 +62,7 @@ Content-Type: application/json
 Forgot Password:
 
 POST http://localhost:3000/api/auth/forget-password
+
 Content-Type: application/json
 
 {
